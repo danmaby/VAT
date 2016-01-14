@@ -1,0 +1,192 @@
+*** Upstart Changelog ***
+
+2015.11.19 - version 1.1.15
+ * Tweak - Removed unused sidebar area.
+   includes/sidebar-init.php
+
+ * Fix - Use get_cart_subtotal for header cart.
+   includes/integrations/woocommerce/template.php
+
+2015.09.03 - version 1.1.14
+ * Fix - Fixes the flickr and embed widgets
+   /includes/widgets/woo-widget-flickr.php
+   /includes/widgets/woo-widget-embed.php
+
+2015.09.02 - version 1.1.13
+ * Fix - Fixes Strict Standards notices in the comments section.
+   comments.php
+
+ * Fix - Ensures all widgets correctly reference parent::__construct and have a clean update() method.
+   /includes/widgets/
+
+2015.08.11 - version 1.1.12
+ * Fix - WP admin bar style fix for link color override.
+ includes/theme-actions.php
+
+2015.06.04 - version 1.1.11
+ * includes/js/jquery.prettyPhoto.js - Updated prettyPhoto to version 3.1.6.
+ * includes/js/jquery.prettyPhoto.min.js - Updated prettyPhoto to version 3.1.6.
+
+2015.03.26 - version 1.1.10
+ * Fix - Fixes the slider video re-sizing issues.
+   includes/js/general.js
+   includes/js/general.min.js
+   css/imports/flexslider.less
+   style.css
+
+* Fix - Background image / color settings
+   includes/theme-actions.php
+
+2015.02.10 - version 1.1.9
+ * Fix - Homepage our team post limit parameter / filter
+   index.php
+
+2015.02.03 - version 1.1.8
+ * Fix - Typo correction, testiominals to testimonials
+   index.php
+   template-business.
+
+ * Tweak - WooCommerce 2.3 prep
+   includes/integrations/woocommerce/setup.php
+
+2014.09.12 - version 1.1.7
+ * New - Declares Sensei support
+   includes/integrations/sensei/sensei.php
+
+2014.07.24 - version 1.1.6
+ * Fix - Several alt style fixes
+   styles/*.less
+   styles/*.css
+   css/setup.less
+   style.css
+
+2014.06.05 - version 1.1.5
+ * Fix - Page styling
+   css/imports/wordpress.less
+   css/layout.less
+   style.css
+
+ * Fix - Product titles appear on hover when returned in a standard post search
+   includes/js/general.js
+   includes/js/general.min.js
+
+ * Fix - Slider image dimensions in business templates
+   template-business.php
+
+ * Tweak - No default twitter ID set
+   includes/theme-options.php
+
+2014.05.08 - version 1.1.4
+ * Tweak - Product category links fill their container for enhanced usability.
+   includes/integrations/woocommerce/css/woocommerce.less
+   includes/integrations/woocommerce/css/woocommerce.css
+
+ * Fix - Page content styling on homepage and business template
+   css/imports/wordpress.less
+   css/layout.less
+   style.css
+
+2014.04.25 - version 1.1.3
+ * Fix - Search results page layout
+   search.php
+   css/imports/wordpress.less
+   style.css
+   includes/js/general.js
+   includes/js/general.min.js
+
+2014.03.25 - version 1.1.2
+ * Fix - Dropdown / blog post conflict on archive pages
+   css/structure.less
+   style.css
+
+2014.03.06 - version 1.1.1
+ * Fix - Updated fitvids to the latest stable version
+   includes/js/fitvids.js
+   includes/js/fitvids.min.js
+
+2014.02.14 - version 1.1.0
+ * New - Projects integration
+   includes/theme-plugin-integrations.php
+   includes/projects/
+
+2014.02.10 - version 1.0.5
+ * Tweak - Don't set a default twitter id
+   footer.php
+
+2014.02.07 - version 1.0.4
+ * Tweak - Removed redundant 'Post Content' theme option
+   includes/theme-options.php
+
+ * Tweak - iPad nav fix
+   includes/js/general.js,
+   includes/js/general.min.js
+
+ * Tweak - Team member description hover affect only applies on 1024+. Touch devices can now click links.
+   includes/integrations/our-team/css/our-team.less,
+   includes/integrations/our-team/css/our-team.css
+
+2014.01.13 - version 1.0.3
+ * Fix - Homepage widgets display correct numbers of posts.
+   includes/theme-functions.php
+
+ * Fix - Testimonials on touch devices
+   includes/integrations/testimonials/js/testimonials.js,
+   includes/integrations/testimonials/js/testimonials.min.js
+
+ * Tweak - Testimonials integration filters the default args allowing shortcodes to over ride.
+   includes/integrations/testimonials/testimonials.php
+
+ * Tweak - Features integration filters the default args allowing shortcodes to over ride.
+   includes/integrations/features/features.php
+
+2014.01.03 - version 1.0.2
+ * Fix - Sale banner no longer overlaps dropdowns
+   includes/integrations/woocommerce/css/woocommerce.less,
+   includes/integrations/woocommerce/css/woocommerce.css
+
+ * Tweak - Added woo_homepage_slider_fullscreen filter to disable full screen slider
+   includes/theme-actions.php,
+   includes/js/general.js,
+   includes/js/general.min.js,
+   includes/css/flexslider.less
+   includes/css/flexslider.css
+
+ * Fix - Product sub categories on shop archives
+   includes/integrations/woocommerce/js/woocommerce.js,
+   includes/integrations/woocommerce/js/woocommerce.min.js,
+   includes/integrations/woocommerce/css/woocommerce.less,
+   includes/integrations/woocommerce/css/woocommerce.css,
+   includes/integrations/woocommerce/setup.php,
+   includes/integrations/woocommerce/template.php
+
+ * Tweak - Layout on archives when not using breadcrumbs
+   css/imports/structure.less,
+   style.css
+
+ * Tweak - Removed unnecessary check before displaying featured image
+   content.php
+
+ * Tweak - Removed unnecessary content-search.php template file.
+
+2013.12.09 - version 1.0.1
+ * New - Better integration with WooSlider
+   style.css
+
+ * Fix - footer contact alignment.
+   style.css
+
+ * Fix - Checkout layout on handheld devices
+   includes/integrations/woocommerce/woocommerce.less,
+   includes/integrations/woocommerce/woocommerce.css
+
+ * Fix - Footer contact links should appear regardless of whether footer widgets are specified.
+   footer.php
+
+ * Fix - Adds missing Subscribe & Connect social icons in the woo_display_social_icons() function.
+   includes/theme-functions.php
+
+ * Tweak - Improved homepage slider display on handheld devices
+   style.css
+
+2013.11.28 - version 1.0.0
+ * First release!
